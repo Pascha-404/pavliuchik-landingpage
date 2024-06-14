@@ -3,12 +3,15 @@ import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
+import DarkIcon from '../public/icons/favicon-dark.svg';
+import LightIcon from '../public/icons/favicon-light.svg';
+
 export const metadata = {
 	metadataBase: new URL('https://www.pavliuchik.com'),
 	alternates: { canonical: '/' },
 	generator: 'Next.js',
 	applicationName: "Patrick and Kseniia Pavliuchik's Portfolios",
-	title: 'Patrick & Kseniia Pavliuchik - Web Developer & Designer',
+	title: 'Kseniia & Patrick Pavliuchik - Designer & Web Developer',
 	description:
 		'Discover the portfolios of Patrick Pavliuchik, a web developer specializing in React & Next.js, and Kseniia Pavliuchik, a talented web designer. Explore innovative, user-friendly web solutions and creative designs. Open for collaborative opportunities.',
 	keywords: [
@@ -42,6 +45,20 @@ export const metadata = {
 	creator: 'Patrick Pavliuchik',
 	publisher: 'Patrick Pavliuchik',
 	category: 'Web Development and Design',
+	icons: {
+		icon: [
+			{
+				type: 'image/svg+xml',
+				media: '(prefers-color-scheme: light)',
+				url: DarkIcon.src,
+			},
+			{
+				type: 'image/svg+xml',
+				media: '(prefers-color-scheme: dark)',
+				url: LightIcon.src,
+			},
+		],
+	},
 	other: {
 		'geo.region': 'DE-BE',
 		'geo.placename': 'Berlin',
