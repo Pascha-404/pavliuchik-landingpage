@@ -3,8 +3,8 @@ import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
-import DarkIcon from '../public/icons/favicon-dark.svg';
-import LightIcon from '../public/icons/favicon-light.svg';
+import DarkIcon from '../public/favicon-dark.png';
+import LightIcon from '../public/favicon-light.png';
 
 export const metadata = {
 	metadataBase: new URL('https://www.pavliuchik.com'),
